@@ -1,28 +1,22 @@
 {
     "compilerOptions": {
-      "target":"es6"
-      , "module": "commonjs"
-      ,"sourceMap": true
-      ,"noEmitOnError": true
-      ,"noUnusedParameters":true
-      ,"moduleResolution": "node"
-      ,"allowSyntheticDefaultImports":true
-      ,"jsx":"preserve"
-      ,"lib":["dom"
-           ,"es2015.core"
-           ,"es2015.collection"
-           ,"es2015.iterable"
-           ,"es2015.proxy"
-           ,"es2015.reflect"
-           ,"es2015.generator"
-           ,"es2015.symbol"
-           ,"es2015.symbol.wellknown"
-           ,"es2016"
-           ,"scripthost"
-           ,"es2017.object"]
+        "target": "es5",
+        "module": "es6",
+        "sourceMap": true,
+        "noEmitOnError": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "noUnusedParameters": true,
+        "moduleResolution": "node",
+        "allowSyntheticDefaultImports": true,
+        "jsx": "preserve",
+        "lib": ["es5", "es6", "dom"]
     },
+    "include": [
+        "src/**/*.ts"
+    ],
     "exclude": [
-      "node_modules",
-      "typings"
+        "node_modules",
+        "typings"
     ]
 }
